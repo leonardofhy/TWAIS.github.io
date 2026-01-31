@@ -869,9 +869,9 @@ body,
    LOGO WALL - Sponsors & Collaborators
    ============================================ */
 .logo-wall-label {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--linear-muted);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--linear-subtext);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
