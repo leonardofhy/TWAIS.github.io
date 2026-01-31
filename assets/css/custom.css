@@ -906,6 +906,13 @@ body,
   transition: color 0.3s ease;
 }
 
+.logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 .logo-item:hover .logo-svg {
   color: var(--linear-text);
 }
