@@ -20,9 +20,13 @@
             {{ $authorData := index $.Site.Data.authors $authorKey }}
 
             <article class="team-member-row">
-                {{/* Profile Picture */}}
+                {{/* Profile Picture - Check page resources first, then fallback to author data */}}
                 <div class="team-member-avatar">
-                    {{ if $authorData.image }}
+                    {{ $avatar := .Resources.GetMatch "avatar.*" }}
+                    {{ if $avatar }}
+                    <img src="{{ $avatar.RelPermalink }}" alt="{{ .Title }}"
+                        class="w-full h-full object-cover rounded-xl">
+                    {{ else if $authorData.image }}
                     <img src="{{ $authorData.image | relURL }}" alt="{{ .Title }}"
                         class="w-full h-full object-cover rounded-xl">
                     {{ else }}
