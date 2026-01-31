@@ -1,4 +1,5 @@
 # -- Main Menu --
+# Order: Home → Events → Blog → Resources → Team → About
 
 [[main]]
   name = "Home"
@@ -6,28 +7,28 @@
   weight = 10
 
 [[main]]
-  name = "About"
-  pageRef = "about"
+  name = "Events"
+  pageRef = "events"
   weight = 20
-
-[[main]]
-  name = "Team"
-  pageRef = "team"
-  weight = 30
 
 [[main]]
   name = "Blog"
   pageRef = "blog"
-  weight = 40
-
-[[main]]
-  name = "Events"
-  pageRef = "events"
-  weight = 50
+  weight = 30
 
 [[main]]
   name = "Resources"
   pageRef = "resources"
+  weight = 40
+
+[[main]]
+  name = "Team"
+  pageRef = "team"
+  weight = 50
+
+[[main]]
+  name = "About"
+  pageRef = "about"
   weight = 60
 
 # -- Footer Menu --
