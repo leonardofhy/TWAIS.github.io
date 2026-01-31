@@ -51,21 +51,36 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
-  #homepageImage = "IMAGE.jpg" # used in: hero, and card
-  showRecent = false
+  layout = "background"
+  showRecent = true
   showRecentItems = 5
-  showMoreLink = false
-  showMoreLinkDest = "/posts/"
-  cardView = false
-  cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
-  disableHeroImageFilter = false # only used when layout equals hero
+  showMoreLink = true
+  showMoreLinkDest = "/blog/"
+  cardView = true
+  layoutBackgroundBlur = true
+
+  [homepage.typewriter]
+    enabled = true
+    speed = 50
+    cursor = "_"
+    texts = ["AI Alignment", "Interpretability", "AI Governance", "Safe AGI"]
+
+  [homepage.button]
+    enable = true
+    text = "Join Community"
+    url = "https://discord.gg/DeypaQEB"
+
+  [homepage.secondaryButton]
+    enable = true
+    text = "Our Projects"
+    url = "/projects"
 
 [article]
   showDate = true
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
+  showTime = true
+  showDays = true
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
