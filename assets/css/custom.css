@@ -593,3 +593,75 @@ svg {
 .menu a:hover {
   color: var(--linear-text-bright) !important;
 }
+
+/* ============================================
+   GLOBAL BACKGROUND OVERRIDES
+   Force unified dark background on ALL pages
+   ============================================ */
+
+/* Main container and page wrappers */
+main,
+section,
+article,
+aside,
+.container,
+.wrapper,
+.page,
+.content {
+  background-color: var(--linear-bg) !important;
+}
+
+/* Blowfish specific containers */
+.prose,
+.article-content,
+.page-content,
+.single-content,
+.list-content {
+  background-color: transparent !important;
+}
+
+/* Override ALL neutral backgrounds */
+[class*="bg-neutral"],
+[class*="dark:bg-neutral"] {
+  background-color: var(--linear-bg) !important;
+}
+
+/* Specific Blowfish card styles - keep subtle contrast */
+.card,
+article.card,
+.article-card,
+.list-item {
+  background-color: var(--linear-bg-card) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Navigation and header */
+header,
+nav,
+.navbar,
+.nav-container {
+  background-color: rgba(8, 9, 10, 0.9) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+/* Footer */
+footer,
+.footer {
+  background-color: var(--linear-bg) !important;
+}
+
+/* About page, Team page, etc. */
+.about,
+.team,
+.projects,
+.blog {
+  background-color: var(--linear-bg) !important;
+}
+
+/* Force background on body and html */
+html,
+body,
+#__next,
+#app {
+  background-color: var(--linear-bg) !important;
+}
