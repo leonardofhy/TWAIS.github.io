@@ -72,8 +72,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
   [homepage.secondaryButton]
     enable = true
-    text = "Our Projects"
-    url = "/projects"
+    text = "Our Blog"
+    url = "/blog"
 
 [article]
   showDate = true
