@@ -1,6 +1,6 @@
 ---
 title: "Our Team"
-description: "Meet the people behind NTUAIS!"
+description: "Meet the people behind NTUAIS"
 cascade:
   showDate: false
   showAuthor: true
