@@ -1,12 +1,13 @@
 ---
-title: "Leonardo Foo Haw-Yang (Leo)"
+title: "Leonardo Foo Haw-Yang"
 description: "MS Student @ NTU GICE | SPML Lab"
 summary: "AI researcher focusing on NLP, Speech Processing, and Mechanistic Interpretability. Facilitator for 2025 Taiwan AI Safety Summer Workshop."
 date: 2026-01-31
 authors: ["leonardo-foo-haw-yang"]
 status: "active"
+weight: 1
 draft: false
----22
+---
 
 Leonardo is an AI researcher at NTU's Speech Processing and Machine Learning Lab (GICE) under the supervision of Prof. Hung-yi Lee. With an MS in Electrical Engineering from NTU, his research focuses on NLP, Speech Processing, and Mechanistic Interpretability for multimodal LMs.
 

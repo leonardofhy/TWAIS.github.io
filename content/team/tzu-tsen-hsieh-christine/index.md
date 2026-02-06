@@ -1,5 +1,5 @@
 ---
-title: "Tzu-Tsen Hsieh (Christine)"
+title: "Tzu-Tsen Hsieh"
 description: "MSc in EE @ NTU | Medical AI Researcher"
 summary: "Research in medical AI with focus on interpretable models and reinforcement learning for diffusion model alignment."
 date: 2026-01-31

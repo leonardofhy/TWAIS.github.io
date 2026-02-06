@@ -1,9 +1,10 @@
 ---
-title: "Alvin Lau"
+title: "Po-Yi Lu"
 description: "Mentor"
 summary: ""
 date: 2026-02-07
-authors: ["alvin-lau"]
+authors: ["po-yi-lu"]
 status: "mentor"
+weight: 3
 draft: false
 ---
