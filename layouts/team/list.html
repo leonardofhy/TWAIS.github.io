@@ -18,7 +18,7 @@
         {{ $active := where $members "Params.status" "ne" "mentor" }}
         {{ $mentors := where $members "Params.status" "eq" "mentor" }}
 
-        {{/* Active Members Section */}}
+        {{/* Active Members Section (Organizers) */}}
         {{ if gt (len $active) 0 }}
         <section class="mb-16">
             <h2 class="section-heading mb-8">Organizers</h2>
@@ -48,22 +48,23 @@
 
                     {{/* Info Section */}}
                     <div class="team-member-info">
-                        {{/* Name */}}
-                        <h2 class="team-member-name">
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        {{/* Name - Links Removed */}}
+                        <h2 class="team-member-name text-2xl font-bold text-neutral-100 mb-1">
+                            {{ .Title }}
                         </h2>
 
                         {{/* Role / Short Description */}}
                         {{ with .Description }}
-                        <p class="team-member-role">{{ . }}</p>
+                        <p class="team-member-role text-neutral-400 mb-4">{{ . }}</p>
                         {{ end }}
 
                         {{/* Social Links */}}
                         {{ with $authorData.social }}
-                        <div class="team-member-social">
+                        <div class="team-member-social flex flex-wrap gap-3">
                             {{ range . }}
                             {{ range $platform, $url := . }}
-                            <a href="{{ $url }}" target="_blank" rel="noopener" class="team-social-link"
+                            <a href="{{ $url }}" target="_blank" rel="noopener"
+                                class="team-social-link p-2 bg-neutral-800 rounded-lg hover:bg-primary-600/20 hover:text-primary-400 transition-colors"
                                 title="{{ $platform | title }}">
                                 {{ partial "icon.html" $platform }}
                             </a>
@@ -81,16 +82,59 @@
         {{/* Mentors Section */}}
         {{ if gt (len $mentors) 0 }}
         <section>
-            <h2 class="section-heading mb-6">Mentors</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <h2 class="section-heading mb-8">Mentors</h2>
+            <div class="team-list space-y-6">
                 {{ range $mentors }}
-                <a href="{{ .Permalink }}"
-                    class="block p-4 rounded-xl border border-neutral-800 bg-neutral-900/50 hover:bg-neutral-800 transition-colors">
-                    <h3 class="text-lg font-semibold text-neutral-100">{{ .Title }}</h3>
-                    {{ with .Description }}
-                    <p class="text-sm text-neutral-400 mt-1">{{ . }}</p>
-                    {{ end }}
-                </a>
+                {{ $authorKey := index .Params.authors 0 }}
+                {{ $authorData := index $.Site.Data.authors $authorKey }}
+
+                <article class="team-member-row">
+                    {{/* Profile Picture */}}
+                    <div class="team-member-avatar">
+                        {{ $avatar := .Resources.GetMatch "avatar.*" }}
+                        {{ if $avatar }}
+                        <img src="{{ $avatar.RelPermalink }}" alt="{{ .Title }}"
+                            class="w-full h-full object-cover rounded-xl" style="pointer-events: none;"
+                            data-zoomable="false">
+                        {{ else if $authorData.image }}
+                        <img src="{{ $authorData.image | relURL }}" alt="{{ .Title }}"
+                            class="w-full h-full object-cover rounded-xl" style="pointer-events: none;"
+                            data-zoomable="false">
+                        {{ else }}
+                        <div class="w-full h-full bg-neutral-700 rounded-xl flex items-center justify-center">
+                            <span class="text-4xl">👤</span>
+                        </div>
+                        {{ end }}
+                    </div>
+
+                    {{/* Info Section */}}
+                    <div class="team-member-info">
+                        {{/* Name - Links Removed */}}
+                        <h2 class="team-member-name text-2xl font-bold text-neutral-100 mb-1">
+                            {{ .Title }}
+                        </h2>
+
+                        {{/* Role / Short Description */}}
+                        {{ with .Description }}
+                        <p class="team-member-role text-neutral-400 mb-4">{{ . }}</p>
+                        {{ end }}
+
+                        {{/* Social Links */}}
+                        {{ with $authorData.social }}
+                        <div class="team-member-social flex flex-wrap gap-3">
+                            {{ range . }}
+                            {{ range $platform, $url := . }}
+                            <a href="{{ $url }}" target="_blank" rel="noopener"
+                                class="team-social-link p-2 bg-neutral-800 rounded-lg hover:bg-primary-600/20 hover:text-primary-400 transition-colors"
+                                title="{{ $platform | title }}">
+                                {{ partial "icon.html" $platform }}
+                            </a>
+                            {{ end }}
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </article>
                 {{ end }}
             </div>
         </section>
