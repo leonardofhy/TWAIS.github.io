@@ -1,0 +1,31 @@
+section_badge: "About Us"
+section_heading: "Get to Know NTUAIS"
+section_description: "Your questions, answered."
+
+items:
+  - question: "Who are we?"
+    answer: |
+      We are the **National Taiwan University AI Safety Group** (NTUAIS). Since 2024, we've been building a community of researchers, students, and professionals who care about making AI systems safe and beneficial. 2026 marks our **third year** running programs!
+
+  - question: "What is AI Safety?"
+    answer: |
+      AI Safety is the field dedicated to ensuring that advanced AI systems are **aligned with human values** and don't cause unintended harm. As AI becomes more powerful, ensuring it remains beneficial is one of the most important challenges of our time.
+
+  - question: "What do we do?"
+    answer: |
+      We organize:
+      - **Reading groups** to discuss AI safety blogs, papers, and research
+      - **Study circles** for deep dives into technical topics
+      - **Fellowship programs** following curricula like BlueDot Impact
+      
+      We also help people in Taiwan connect with **international AI safety programs** and opportunities.
+
+  - question: "Who should join?"
+    answer: |
+      Anyone who believes AI safety is important for our future and wants to learn more. You don't need a computer science background — we welcome **students, working professionals, and curious minds from all fields**. Diverse perspectives make our discussions richer.
+
+  - question: "How can I get involved?"
+    answer: |
+      1. **Join our Discord** — the best place to ask questions and meet the community
+      2. **Apply for programs** — check our Events page for upcoming reading groups and fellowships
+      3. **Show up!** 🍱 We provide bento at our events!

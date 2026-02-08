@@ -98,47 +98,8 @@
 
 </article>
 
-{{/* Feature Cards Section - Bento Style */}}
-<section class="content-section py-20">
-  <div class="max-w-6xl mx-auto px-6 md:px-12">
-
-    {{/* Section Header */}}
-    <div class="mb-12">
-      <span class="section-badge section-badge--green">Our Focus</span>
-      <h2 class="section-heading">Research areas we explore</h2>
-      <p class="section-description">
-        Advancing AI safety through rigorous research, education, and community building.
-      </p>
-    </div>
-
-    {{/* Feature Grid */}}
-    <div class="feature-grid">
-
-      <div class="feature-card">
-        <h3 class="feature-card-title">Mechanistic Interpretability</h3>
-        <p class="feature-card-description">
-          Understanding the internal mechanisms of neural networks to make AI systems more transparent and predictable.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <h3 class="feature-card-title">Alignment Research</h3>
-        <p class="feature-card-description">
-          Developing techniques to ensure AI systems reliably pursue intended goals without harmful side effects.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <h3 class="feature-card-title">Education & Workshops</h3>
-        <p class="feature-card-description">
-          Hosting reading groups, workshops, and summer programs to grow the AI safety research community in Taiwan.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+{{/* FAQ / About Us Section */}}
+{{ partial "components/faq-accordion.html" . }}
 
 {{/* Upcoming Programs Section - 2026 Highlight */}}
 <section class="content-section py-24 relative overflow-hidden" style="background-color: transparent;">

@@ -8,7 +8,7 @@
   * **SSG**: Hugo (Extended Version)
   * **Theme Base**: [Blowfish](https://blowfish.page/)
   * **Design Style**: Linear.app inspired (深色主題、統一背景、微透明卡片)
-  * **Deployment**: GitHub → Vercel / Netlify (CI/CD)
+  * **Deployment**: GitHub Pages (CI/CD via GitHub Actions)
   * **CMS (Optional)**: Decap CMS
 
 ---
@@ -19,7 +19,7 @@
 
 | 功能 | 狀態 | 說明 |
 |------|------|------|
-| **Hero Section** | ✅ | Linear 風格，左對齊，深色背景，Discord CTA |
+| **Hero Section** | ✅ | Linear 風格，左對齊，深色背景，Discord CTA，動態活動卡片 |
 | **Blog Post** | ✅ | 支援分類、標籤、閱讀時間 |
 | **Member Staffs** | ✅ | 水平行佈局 (頭像左、資訊右) |
 | **Events** | ✅ | 已建立頁面結構，待填內容 |
@@ -115,12 +115,14 @@ content/
     *   [x] **新增區塊**: 在首頁加入 "Upcoming 2026 Programs"。
     *   [x] **Unify Team Data Structure**: Move all member data to `content/team/*.md` and update `list.html` to remove JSON dependency.
     *   [x] **Setup Deployment**: Configure GitHub Actions to automatically build and deploy `TWAIS.github.io` on commit to `main` (Served via GitHub Pages).
-    *   [ ] **填補資訊**: 確認 BlueDot, Technical Reading, 的具體日期與報名連結。
+    *   [x] **動態活動卡片**: Hero section 的活動卡片現在從 `content/events/` 動態讀取。
+    *   [ ] **填補資訊**: 確認 BlueDot, Technical Reading 的具體日期與報名連結。
     *   [ ] **樣式優化**: 確保手機版顯示正常。
 
 ### Phase 2: 品牌教準 (Refine Identity) - 🟡 Planned
 *   **目標**: 吸引聽眾，建立信任感。
 *   **執行項目**:
+    *   [ ] **FAQ/Vision Section**: 將 "Our Focus" 改為 FAQ 可展開式，傳達組織願景。
     *   **Hero 文案**: 調整打字機效果文字，使其更具號召力。
     *   **About 頁面**: 增加成員故事或照片 (Optional)。
 
