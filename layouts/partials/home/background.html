@@ -163,8 +163,18 @@
 
     {{/* Programs Grid */}}
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {{ range .Site.Data.upcoming_programs.upcoming_programs }}
+      {{ $upcomingEvents := where .Site.RegularPages "Section" "events" }}
+      {{ $upcomingEvents = where $upcomingEvents "Date" "ge" now }}
+      {{ $upcomingEvents = $upcomingEvents.ByDate }}
+
+      {{ range $upcomingEvents }}
       {{ partial "components/program-card.html" . }}
+      {{ else }}
+      {{/* Fallback if no upcoming events */}}
+      <div class="col-span-1 md:col-span-2 text-center py-12 border border-neutral-800 rounded-2xl bg-[#0d1117]/50">
+        <p class="text-neutral-400 text-lg">More events coming soon.</p>
+        <p class="text-neutral-500 text-sm mt-2">Join our Discord to stay updated.</p>
+      </div>
       {{ end }}
     </div>
 
