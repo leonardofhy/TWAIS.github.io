@@ -5,12 +5,13 @@ draft: false
 summary: "本週課程探討 AI 系統可能造成的災難性風險（如幫助惡意行為者或意外失控），以及我們如何透過威脅建模與防禦策略來降低這些風險。"
 tags: ["AI Safety", "Course", "Risk Assessment", "AI Control"]
 categories: ["Education"]
-author: "BlueDot Impact & Yu-Chen Tsai (Zen)"
+author: "Yu-Chen Tsai (Zen)"
 showAuthor: false
 authors:
-  - "bluedot"
   - "zen"
 ---
+
+> **本文翻譯自 BlueDot Impact [AI Safety Fundamentals](https://aisafetyfundamentals.com/) 課程內容。**
 
 **假設傷害會發生**
 
