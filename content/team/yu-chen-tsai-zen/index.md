@@ -8,7 +8,7 @@ weight: 4
 draft: false
 image: "img/members/avatar-m.png"
 social:
-  - email: "mailto:95happyzen@gmail.com"
+  - email: "mailto:yuchentsai2026@gmail.com"
   - facebook: "https://www.facebook.com/zen.tsai.37"
   - threads: "https://www.threads.com/@tsai_zen"
 ---
@@ -25,6 +25,6 @@ I share research takeaways to spark awareness within my Threads community.
 
 ## Contact
 
-- [Email](mailto:95happyzen@gmail.com)
+- [Email](mailto:yuchentsai2026@gmail.com)
 - [Facebook](https://www.facebook.com/zen.tsai.37)
 - [Threads](https://www.threads.com/@tsai_zen)
